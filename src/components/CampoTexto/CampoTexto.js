@@ -6,7 +6,7 @@ export const CampoTexto = (props) => {
             <label>
                 {props.label}
             </label>
-            <input placeholder={props.placeholder} />
+            <input required={props.obrigatorio} holder={props.placeholder} /> {/* Passado o obrigatorio como parâmetro ao chamar campo texto e validando dentro do component */}
         </div>
     )
 }
