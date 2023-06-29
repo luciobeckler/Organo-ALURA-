@@ -41,8 +41,6 @@ function App() {
       corPrimaria: '#FF8A29',
       corSecundaria: '#FFEEDF'
     }
-
-
   ]
 
   const [colaboradores, setColaboradores] = useState([]);
@@ -55,7 +53,8 @@ function App() {
     <div className="App">
       <Banner />
 
-      <Formulario aoColaboradorCadastrado={aoNovoColaboradorAdicionado}></Formulario>
+      {/* map recebe uma lista de objetos e retorna uma lista com os atributos nomes */}
+      <Formulario key={times.nome} times={times.map(time => time.nome)} aoColaboradorCadastrado={aoNovoColaboradorAdicionado}></Formulario>
 
       {times.map(times => (
 
