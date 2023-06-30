@@ -56,13 +56,14 @@ function App() {
       {/* map recebe uma lista de objetos e retorna uma lista com os atributos nomes */}
       <Formulario key={times.nome} times={times.map(time => time.nome)} aoColaboradorCadastrado={aoNovoColaboradorAdicionado}></Formulario>
 
-      {times.map(times => (
+      {times.map(time => (
 
         <Time
-          key={times.nome}
-          nome={times.nome}
-          corPrimaria={times.corPrimaria}
-          corSecundaria={times.corSecundaria}>
+          key={time.nome}
+          nome={time.nome}
+          corPrimaria={time.corPrimaria}
+          corSecundaria={time.corSecundaria}
+          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}>
         </Time>
 
       ))}
