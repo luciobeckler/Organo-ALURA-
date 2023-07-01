@@ -6,19 +6,19 @@ const Rodape = () => {
             <section>
                 <ul>
                     <li>
-                        <img src='/imagens/imagens/fb.png' />
+                        <img src='/imagens/imagens/fb.png' alt=' Facebook logo' />
                     </li>
                     <li>
-                        <img src='./imagens/imagens/tw.png' />
+                        <img src='./imagens/imagens/tw.png' alt=' Twitter logo' />
                     </li>
                     <li>
-                        <img src='./imagens/imagens/ig.png' />
+                        <img src='./imagens/imagens/ig.png' alt=' Instagram logo' />
                     </li>
                 </ul>
             </section>
 
             <section>
-                <img src='/imagens/imagens/logo.png' />
+                <img src='/imagens/imagens/logo.png' alt='Organo logo' />
             </section>
 
             <section>

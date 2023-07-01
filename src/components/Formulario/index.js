@@ -18,6 +18,7 @@ const Formulario = (props) => {
         setNome('')
         setCargo('')
         setImagem('')
+        setTime('')
     }
 
     const [nome, setNome] = useState('')
