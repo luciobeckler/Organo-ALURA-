@@ -1,5 +1,9 @@
 .footer {
   background: #6278f7;
+  background-image: url("../../imagens/fundo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
   color: #fff;
   padding: 80px;
   display: flex;
