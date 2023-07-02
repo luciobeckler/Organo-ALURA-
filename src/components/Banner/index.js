@@ -12,7 +12,7 @@ const Rodape = () => {
             </section>
 
             <section>
-                <img src='https://cdn.icon-icons.com/icons2/3660/PNG/512/valorant_logo_play_riot_games_icon_228477.png' />
+                <img src='https://cdn.icon-icons.com/icons2/3660/PNG/512/valorant_logo_play_riot_games_icon_228477.png' width={200} />
             </section>
         </header>
     )

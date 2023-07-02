@@ -11,15 +11,6 @@
   align-items: center;
 }
 
-.header ul li {
-  display: inline-block;
-  margin-right: 32px;
-}
-
-.header ul li:last-child {
-  margin-right: 0;
-}
-
 @media (max-width: 1150px) {
   .header {
     flex-direction: column;
