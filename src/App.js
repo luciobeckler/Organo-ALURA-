@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import Banner from './components/Banner';
 import Formulario from './components/Formulario';
-import Time from './components/TIme';
+import Mapa from './components/Mapa';
 import Rodape from './components/Rodape';
 
 function App() {
 
-  const times = [
+  const mapas = [
     {
       nome: 'Lotus',
       corPrimaria: '#C05590',
@@ -55,7 +55,11 @@ function App() {
   ]
 
   const agentes = [
-    'Jett', 'Phoenix', 'Sova', 'Brimstone', 'Chyper', 'Raze', 'Sova', 'Reyna', 'Killjoy', 'Yoru', 'Omen', 'Chamber', 'KAY/O', 'Viper', 'Skye', 'Astra', 'Breach', 'Fade', 'Deadlock', 'Sage'
+    'Jett', 'Phoenix', 'Sova',
+    'Brimstone', 'Chyper', 'Raze', 'Sova',
+    'Reyna', 'Killjoy', 'Yoru', 'Omen', 'Chamber',
+    'KAY/O', 'Viper', 'Skye', 'Astra', 'Breach', 'Fade',
+    'Deadlock', 'Sage'
   ]
 
   const [colaboradores, setColaboradores] = useState([]);
@@ -68,17 +72,17 @@ function App() {
       <Banner></Banner>
 
       {/* map recebe uma lista de objetos e retorna uma lista com os atributos nomes */}
-      <Formulario key={times.nome} times={times.map(time => time.nome)} aoColaboradorCadastrado={aoNovoColaboradorAdicionado}></Formulario>
+      <Formulario key={mapas.nome} mapas={mapas.map(mapa => mapa.nome)} aoColaboradorCadastrado={aoNovoColaboradorAdicionado}></Formulario>
 
-      {times.map(time => (
+      {mapas.map(mapa => (
 
-        <Time
-          key={time.nome}
-          nome={time.nome}
-          corPrimaria={time.corPrimaria}
-          corSecundaria={time.corSecundaria}
-          colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}>
-        </Time>
+        <Mapa
+          key={mapa.nome}
+          nome={mapa.nome}
+          corPrimaria={mapa.corPrimaria}
+          corSecundaria={mapa.corSecundaria}
+          colaboradores={colaboradores.filter(colaborador => colaborador.mapa === mapa.nome)}>
+        </Mapa>
       ))
       }
       <Rodape></Rodape>

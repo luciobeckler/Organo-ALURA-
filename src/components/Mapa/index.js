@@ -1,10 +1,10 @@
 import Colaborador from '../Colaborador'
-import './Time.css'
+import './Mapa.css'
 
-const Time = (props) => {
+const Mapa = (props) => {
 
     return (
-        (props.colaboradores.length > 0) && <section className='time' style={{ backgroundColor: props.corSecundaria }}>
+        (props.colaboradores.length > 0) && <section className='mapa' style={{ backgroundColor: props.corSecundaria }}>
             <h3 style={{ borderColor: props.corPrimaria }} > {props.nome}</h3>
             <div className='colaboradores'>
                 {props.colaboradores.map(colaborador =>
@@ -20,4 +20,4 @@ const Time = (props) => {
     )
 }
 
-export default Time
+export default Mapa

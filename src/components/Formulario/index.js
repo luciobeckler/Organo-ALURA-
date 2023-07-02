@@ -13,18 +13,18 @@ const Formulario = (props) => {
             nome,  //é igual a nome:nome e etc
             cargo,
             imagem,
-            time
+            mapa
         })
         setNome('')
         setCargo('')
         setImagem('')
-        setTime('')
+        setMapa('')
     }
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
-    const [time, setTime] = useState('')
+    const [mapa, setMapa] = useState('')
 
     return (
         <section className='formulario'>
@@ -52,10 +52,10 @@ const Formulario = (props) => {
                 />
                 <ListaSuspensa
                     obrigatorio={true}
-                    label="Time"
-                    itens={props.times}
-                    valor={time}
-                    aoAlterado={time => setTime(time)}
+                    label="Mapa"
+                    itens={props.mapas}
+                    valor={mapa}
+                    aoAlterado={mapa => setMapa(mapa)}
                 />
                 <Botao>Criar Card</Botao>
             </form>
