@@ -1,5 +1,5 @@
 .footer {
-  background: #6278f7;
+  background: #111111;
   background-image: url("../../imagens/fundo.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,6 +8,7 @@
   padding: 80px;
   display: flex;
   justify-content: space-between;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -18,4 +19,16 @@
 
 .footer ul li:last-child {
   margin-right: 0;
+}
+
+@media (max-width: 1150px) {
+  .footer {
+    flex-direction: column;
+  }
+  .footer section {
+    padding-bottom: 50px;
+  }
+  .footer section:last-child {
+    padding-bottom: 0px;
+  }
 }

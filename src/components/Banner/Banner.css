@@ -1,8 +1,33 @@
-.banner {
-  background-color: #6278f7;
-  text-align: center;
+.header {
+  background: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  color: #fff;
+  padding: 80px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
 }
 
-.banner img {
-  max-width: 100%;
+.header ul li {
+  display: inline-block;
+  margin-right: 32px;
+}
+
+.header ul li:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1150px) {
+  .header {
+    flex-direction: column;
+  }
+  .header section {
+    padding-bottom: 50px;
+  }
+  .header section:last-child {
+    padding-bottom: 0px;
+  }
 }

@@ -1,12 +1,21 @@
 import './Banner.css'
 
-const Banner = () => {
+const Rodape = () => {
     return (
-        <header className='banner'>
-            <img src="/imagens/imagens/banner.png" alt="O banner principal da página do organo"></img>
+        <header className="header">
+            <section>
+                <img src='/imagens/imagens/logo.png' alt='Organo logo' />
+            </section>
+
+            <section>
+                <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSULTY1NVAWmfGsRSq4Ikz_SJfB18cTdaMyhw&usqp=CAU' />
+            </section>
+
+            <section>
+                <img src='https://cdn.icon-icons.com/icons2/3660/PNG/512/valorant_logo_play_riot_games_icon_228477.png' />
+            </section>
         </header>
     )
 }
 
-
-export default Banner;
+export default Rodape

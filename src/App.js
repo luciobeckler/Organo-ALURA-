@@ -51,7 +51,7 @@ function App() {
   }
   return (
     <div className="App">
-      <Banner />
+      <Banner></Banner>
 
       {/* map recebe uma lista de objetos e retorna uma lista com os atributos nomes */}
       <Formulario key={times.nome} times={times.map(time => time.nome)} aoColaboradorCadastrado={aoNovoColaboradorAdicionado}></Formulario>
