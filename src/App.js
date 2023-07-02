@@ -9,49 +9,53 @@ function App() {
   const times = [
     {
       nome: 'Lotus',
-      corPrimaria: '#57c278',
-      corSecundaria: '#d9f7e9'
+      corPrimaria: '#C05590',
+      corSecundaria: '#E1AAB2'
     },
     {
       nome: 'Pearl',
-      corPrimaria: '#82CFFA',
-      corSecundaria: '#E8F8FF'
+      corPrimaria: '#38A1AC',
+      corSecundaria: '#6FB2C8'
     },
     {
       nome: 'Fracture',
-      corPrimaria: '#A6D157',
-      corSecundaria: '#F0F8E2'
+      corPrimaria: '#799461',
+      corSecundaria: '#B5885F'
     },
     {
       nome: 'Breeze',
-      corPrimaria: '#E06B69',
-      corSecundaria: '#FDE7E8'
+      corPrimaria: '#A4FFFC',
+      corSecundaria: '#E9D2C1'
     },
     {
       nome: 'Icebox',
-      corPrimaria: '#DB6EBF',
-      corSecundaria: '#FAE9F5'
+      corPrimaria: '#322F4B',
+      corSecundaria: '#868FBE'
     },
     {
       nome: 'Bind',
-      corPrimaria: '#FFBA05',
-      corSecundaria: '#FFF5D9'
+      corPrimaria: '#7C4834',
+      corSecundaria: '#D28A4D'
     },
     {
       nome: 'Haven',
-      corPrimaria: '#FF8A29',
-      corSecundaria: '#FFEEDF'
+      corPrimaria: '#3C4043',
+      corSecundaria: '#C38870'
     },
     {
       nome: 'Split',
-      corPrimaria: '#FF8A29',
-      corSecundaria: '#FFEEDF'
+      corPrimaria: '#8CDCFA',
+      corSecundaria: '#6C6C69'
     },
     {
       nome: 'Ascent',
-      corPrimaria: '#FF8A29',
-      corSecundaria: '#FFEEDF'
+      corPrimaria: '#8A86D3',
+      corSecundaria: '#C46C78'
     }
+  ]
+
+  const agentes = [
+    'Jett', 'Phoenix', 'Sova', 'Brimstone', 'Chyper', 'Raze', 'Sova', 'Reyna', 'Killjoy', 'Yoru', 'Omen', 'Chamber', 'KAY/O', 'Viper', 'Skye', 'Astra', 'Breach', 'Fade', 'Deadlock', 'Sage'
   ]
 
   const [colaboradores, setColaboradores] = useState([]);
