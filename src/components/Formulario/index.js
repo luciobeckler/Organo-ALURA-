@@ -11,20 +11,15 @@ const Formulario = (props) => {
         evento.preventDefault()
         props.aoColaboradorCadastrado({
             nome,  //é igual a nome:nome e etc
-            cargo,
-            imagem,
+            agente,
             mapa
         })
         setNome('')
-        setCargo('')
-        setImagem('')
         setAgente('')
         setMapa('')
     }
 
     const [nome, setNome] = useState('')
-    const [cargo, setCargo] = useState('')
-    const [imagem, setImagem] = useState('')
     const [mapa, setMapa] = useState('')
     const [agente, setAgente] = useState('')
 
@@ -34,27 +29,15 @@ const Formulario = (props) => {
                 <h2>Preencha os dados para criar o card do jogador</h2>
                 <CampoTexto
                     obrigatorio={true}
-                    label="Nome"
-                    placeholder="Digite seu nome"
+                    label="Jogador"
+                    placeholder="Digite seu nick"
                     valor={nome}
                     aoAlterado={valor => setNome(valor)}
                 />
-                <CampoTexto
-                    obrigatorio={true}
-                    label="Cargo"
-                    placeholder="Digite seu cargo"
-                    valor={cargo}
-                    aoAlterado={cargo => setCargo(cargo)}
-                />
-                <CampoTexto
-                    label="Imagem"
-                    placeholder="Digite o endereço da imagem"
-                    valor={imagem}
-                    aoAlterado={imagem => setImagem(imagem)}
-                />
                 <ListaSuspensa
                     obrigatorio={true}
-                    label="Agentes"
+                    label="Agente"
+                    placeholder="Escolha seu agente"
                     itens={props.agentes}
                     valor={agente}
                     aoAlterado={agente => setAgente(agente)}
@@ -63,6 +46,7 @@ const Formulario = (props) => {
                     obrigatorio={true}
                     label="Mapa"
                     itens={props.mapas}
+                    placeholder="Escolha o mapa"
                     valor={mapa}
                     aoAlterado={mapa => setMapa(mapa)}
                 />

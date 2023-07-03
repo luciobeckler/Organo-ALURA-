@@ -168,7 +168,7 @@ function App() {
             <Formulario
                 key={mapas.id}
                 mapas={mapas.map(mapa => mapa.nome)}
-                agentes={agentes.map(agente => [agente.nome, agente.imagem, agente.funcao])}
+                agentes={agentes.map(agente => [agente.nome])}
                 aoColaboradorCadastrado={aoNovoColaboradorAdicionado}
             ></Formulario>
 

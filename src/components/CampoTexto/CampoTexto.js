@@ -13,7 +13,7 @@ export const CampoTexto = (props) => {
             <label>
                 {props.label}
             </label>
-            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} holder={props.placeholder} /> {/* Passado o obrigatorio como parâmetro ao chamar campo texto e validando dentro do component */}
+            <input value={props.valor} onChange={aoDigitado} required={props.obrigatorio} placeholder={props.placeholder} /> {/* Passado o obrigatorio como parâmetro ao chamar campo texto e validando dentro do component */}
         </div>
     )
 }
