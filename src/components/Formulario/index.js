@@ -18,6 +18,7 @@ const Formulario = (props) => {
         setNome('')
         setCargo('')
         setImagem('')
+        setAgente('')
         setMapa('')
     }
 
@@ -25,6 +26,7 @@ const Formulario = (props) => {
     const [cargo, setCargo] = useState('')
     const [imagem, setImagem] = useState('')
     const [mapa, setMapa] = useState('')
+    const [agente, setAgente] = useState('')
 
     return (
         <section className='formulario'>
@@ -49,6 +51,13 @@ const Formulario = (props) => {
                     placeholder="Digite o endereço da imagem"
                     valor={imagem}
                     aoAlterado={imagem => setImagem(imagem)}
+                />
+                <ListaSuspensa
+                    obrigatorio={true}
+                    label="Agentes"
+                    itens={props.agentes}
+                    valor={agente}
+                    aoAlterado={agente => setAgente(agente)}
                 />
                 <ListaSuspensa
                     obrigatorio={true}
