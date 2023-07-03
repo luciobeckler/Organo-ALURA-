@@ -155,10 +155,17 @@ function App() {
             funcao: 'Sentinela'
         }
     ];
-    const [colaboradores, setColaboradores] = useState([]);
+    const [partida, setPartida] = useState([]);
+    const [personagem, setAgente] = useState([]);
 
-    const aoNovoColaboradorAdicionado = (colaborador) => {
-        setColaboradores([...colaboradores, colaborador])
+    const aoNovoJogadorAdicionado = (jogador) => {
+        setPartida([...partida, jogador])
+        console.log(partida)
+    }
+
+    const aoNovoAgenteAdicionado = (agente) => {
+        setAgente([...personagem, agente])
+        console.log(personagem)
     }
     return (
         <div className="App">
@@ -169,7 +176,8 @@ function App() {
                 key={mapas.id}
                 mapas={mapas.map(mapa => mapa.nome)}
                 agentes={agentes.map(agente => [agente.nome])}
-                aoColaboradorCadastrado={aoNovoColaboradorAdicionado}
+                aoJogadorCadastrado={aoNovoJogadorAdicionado}
+                aoAgenteCadastrado={aoNovoAgenteAdicionado}
             ></Formulario>
 
             {mapas.map(mapa => (
@@ -179,7 +187,9 @@ function App() {
                     nome={mapa.nome}
                     corPrimaria={mapa.corPrimaria}
                     corSecundaria={mapa.corSecundaria}
-                    colaboradores={colaboradores.filter(colaborador => colaborador.mapa === mapa.nome)}>
+                    partida={partida.filter(jogador => jogador.mapa === mapa.nome)
+                    }
+                >
                 </Mapa>
             ))
             }

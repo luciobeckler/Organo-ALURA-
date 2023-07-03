@@ -9,10 +9,12 @@ const Formulario = (props) => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        props.aoColaboradorCadastrado({
+        props.aoJogadorCadastrado({
             nome,  //é igual a nome:nome e etc
-            agente,
             mapa
+        })
+        props.aoAgenteCadastrado({
+            agente
         })
         setNome('')
         setAgente('')
