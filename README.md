@@ -7,6 +7,16 @@ O projeto **Organo** é uma aplicação desenvolvida como parte do aprendizado d
 - Cadastro de times;
 - Cadastro de membros com os atributos: nome, cargo, imagem, em formato de link com a extensão de imagem .png ou .jpg, e time;
 - Visualização em cards, onde membros do mesmo time são agrupados;
+- Alteração da cor principal e secundária de times já criados;
+- Opção de favoritar colaboradores;
+
+## Conceitos Exercitados
+
+- Desenvolvimento React com JavaScript;
+- Criação de componentes funcionais;
+- Análise de dependências do projeto;
+- Uso de comandos do `package.json`;
+- Manipulação de estados com o `useState`;
 - Renderização dinâmica de listas com o uso de `.map`;
 - Estilização dos componentes com CSS;
 - Controle de inputs usando `value` e `onChange`;
@@ -16,14 +26,6 @@ O projeto **Organo** é uma aplicação desenvolvida como parte do aprendizado d
 - Utilização de `props` para passar dados entre componentes;
 - Trabalho com `props` que são funções;
 - Escuta de eventos disparados pelo DOM, como o `onSubmit`.
-
-## Conceitos Exercitados
-
-- Desenvolvimento React com JavaScript;
-- Criação de componentes funcionais;
-- Análise de dependências do projeto;
-- Uso de comandos do `package.json`;
-- Manipulação de estados com o `useState`;
 - Utilização de elementos aninhados e a prop `children`;
 - Leitura e interpretação de mensagens de erro;
 - Depuração do código com o `debugger`.
