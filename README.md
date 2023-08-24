@@ -5,7 +5,7 @@ O projeto **Organo** é uma aplicação desenvolvida como parte do aprendizado d
 ## Funcionalidades
 
 - Cadastro de times;
-- Cadastro de membros com os atributos: nome, cargo, imagem e time;
+- Cadastro de membros com os atributos: nome, cargo, imagem, em formato de link com a extensão de imagem .png ou .jpg, e time;
 - Visualização em cards, onde membros do mesmo time são agrupados;
 - Renderização dinâmica de listas com o uso de `.map`;
 - Estilização dos componentes com CSS;
