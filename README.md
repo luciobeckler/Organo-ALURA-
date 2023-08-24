@@ -12,23 +12,23 @@ O projeto **Organo** é uma aplicação desenvolvida como parte do aprendizado d
 
 ## Conceitos Exercitados
 
-- Desenvolvimento React com JavaScript;
-- Criação de componentes funcionais;
-- Análise de dependências do projeto;
-- Uso de comandos do `package.json`;
-- Manipulação de estados com o `useState`;
-- Renderização dinâmica de listas com o uso de `.map`;
-- Estilização dos componentes com CSS;
-- Controle de inputs usando `value` e `onChange`;
-- Manipulação e transformação de arrays de objetos;
-- Filtragem de itens em arrays;
-- Renderização condicional de elementos;
-- Utilização de `props` para passar dados entre componentes;
-- Trabalho com `props` que são funções;
-- Escuta de eventos disparados pelo DOM, como o `onSubmit`.
-- Utilização de elementos aninhados e a prop `children`;
-- Leitura e interpretação de mensagens de erro;
-- Depuração do código com o `debugger`.
+- 💡 Desenvolvimento React com JavaScript: Desenvolvimento de aplicações web modernas e interativas usando a biblioteca React, combinando lógica de programação com JavaScript.
+- ⚙️ Criação de Componentes Funcionais: Construção de componentes reutilizáveis baseados em funções para criar uma arquitetura modular.
+- 📦 Análise de Dependências do Projeto: Exploração e gerenciamento de dependências do projeto usando ferramentas como package.json.
+- 📜 Uso de Comandos do package.json: Execução de tarefas de desenvolvimento, como iniciar o servidor local, comandos personalizados e gerenciamento de scripts usando o arquivo package.json.
+- 🧠 Manipulação de Estados com o useState: Gerenciamento de estados em componentes funcionais usando o hook useState para controlar informações dinâmicas.
+- 🔄 Renderização Dinâmica de Listas com .map: Criação de listas dinâmicas renderizando componentes repetidamente usando o método .map de arrays.
+- 🎨 Estilização dos Componentes com CSS: Aplicação de estilos e formatação visual aos componentes usando CSS.
+- ⌨️ Controle de Inputs Usando value e onChange: Controle de elementos de entrada e atualização de estados baseados em mudanças de entrada do usuário.
+- 🧩 Manipulação e Transformação de Arrays de Objetos: Trabalho com dados complexos por meio de manipulação, filtragem e transformação de arrays de objetos.
+- 🔍 Filtragem de Itens em Arrays: Filtragem seletiva de itens com base em critérios específicos, melhorando a exibição de dados.
+- 🎯 Renderização Condicional de Elementos: Renderização condicional de componentes com base em condições lógicas para otimizar a experiência do usuário.
+- 📨 Utilização de Props para Passar Dados Entre Componentes: Comunicação entre componentes por meio da passagem de dados utilizando props.
+- 🛠️ Trabalho com Props que são Funções: Uso de props que são funções para criar interações dinâmicas entre componentes.
+- 🎧 Escuta de Eventos Disparados pelo DOM, como o onSubmit: Captura de eventos do DOM, como onSubmit, para melhorar a interatividade e resposta do usuário.
+- 🧬 Utilização de Elementos Aninhados e a Prop children: Criação de componentes que podem conter outros componentes como filhos, permitindo uma estrutura de composição flexível.
+- 🐞 Leitura e Interpretação de Mensagens de Erro: Identificação e compreensão de mensagens de erro para depuração eficaz de problemas.
+- 🐛 Depuração do Código com o Debugger: Uso de ferramentas de depuração, como o debugger, para investigar e resolver problemas no código.
 
 ## Como Iniciar
 
